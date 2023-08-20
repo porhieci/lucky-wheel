@@ -1,0 +1,127 @@
+/****************************************************
+*** Position the poster to the middle of the page ***
+****************************************************/
+
+body {
+    padding: 20px;
+}
+
+#poster {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+p, h1, h2 {
+    text-align: center;
+}
+
+/*************************
+*** Display the poster ***
+*************************/
+
+body {
+    background-image: url('../public/wood.jpg');
+    background-size:cover;
+}
+
+#poster {
+    overflow: hidden;
+    width: 480px;
+    height: 620px;
+    box-sizing: border-box;
+    background-image: url('../public/parchment.jpg');
+    background-repeat: no-repeat;
+    padding: 20px;
+    text-align:center;
+    box-shadow: 2px 4px 8px 3px #000000;
+}
+
+#mugshot {
+    height: 325px;
+    border: solid 2px #291200;
+    margin: 10px;
+}
+
+/************
+*** Fonts ***
+************/
+
+@font-face {
+    font-family: 'ewert';
+    src: url('fonts/ewert-regular-webfont.woff2') format('woff2'),
+         url('fonts/ewert-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ultra';
+    src: url('fonts/ultra-regular-webfont.woff2') format('woff2'),
+         url('fonts/ultra-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1 {
+    font-family: ewert;
+    color: #291200; 
+    font-size: 44pt;
+    font-weight: normal;
+    
+}
+
+h2, p {
+    font-family: ultra;
+    color: #291200;
+}
+
+
+/*********************
+*** Positionnement ***
+*********************/
+
+h1, h2, p {
+    margin: 0;
+}
+
+#subheading {
+    font-size: 24px;
+}
+
+#name {
+    font-size: 32px;
+}
+
+#price {
+    font-size: 28px;
+}
+
+/**********************
+*** Text decoration ***
+**********************/
+
+#name {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+#reward {
+    font-weight: 100;
+}
+
+#price {
+    text-decoration: underline double 2px;
+    font-style: italic;
+}
+
+/**********************************
+*** Add sepia filter on mugshot ***
+**********************************/
+
+#mugshot {
+    filter: sepia(60%);
+}
